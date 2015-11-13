@@ -1,3 +1,19 @@
+#circlelogo {
+  max-height: 100%;
+  pointer-events: none;
+}
+#navlink {
+  float: right;
+}
+.circlelink {
+  padding: 0;
+  -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+  transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+.circlelinksmall {
+  padding: 10px;
+}
 .jumbotron {
   position: relative;
   width: 100%;
@@ -9,11 +25,6 @@
   text-align: center;
   z-index: 1;
 }
-
-#intro{
-  opacity: 1;
-}
-
 .bgOverlay {
   position: absolute;
   top: 0;
@@ -26,10 +37,8 @@
   text-align: center;
   display: inline-flex;
   z-index: 1;
-  opacity: 1;
   -webkit-filter: blur(2px);
 }
-
 .whiteOverlay {
   position: relative;
   display: inline-table;
@@ -41,9 +50,7 @@
   top: 30%;
   border-radius: 15px;
   -webkit-filter: blur(20px);
-
 }
-
 .vectorOverlay {
   position: absolute;
   background: url("../img/slogan.svg") no-repeat center center;
@@ -57,16 +64,3 @@
   z-index: 3;
   right: 15%
 }
-#navmutex {}
-.navbar-nav {
-  float: right;
-}
-#navphoto {
-  width: 10%;
-  float: left;
-  position: absolute;
-  top: 0px;
-}
-#centre {}
-#cn {}
-#ions {}
