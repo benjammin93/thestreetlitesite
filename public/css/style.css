@@ -14,18 +14,6 @@
   opacity: 1;
 }
 
-.whiteOverlay {
-  position: relative;
-  display: inline-table;
-  width: 70%;
-  height: 30%;
-  background: rgba(255, 255, 255, 0.3);
-  z-index: 2;
-  top: 30%;
-  border-radius: 15px;
-
-}
-
 .bgOverlay {
   position: absolute;
   top: 0;
@@ -39,19 +27,35 @@
   display: inline-flex;
   z-index: 1;
   opacity: 1;
+  -webkit-filter: blur(2px);
 }
 
+.whiteOverlay {
+  position: relative;
+  display: inline-table;
+  width: 80%;
+  height: 45%;
+  background: rgba(230, 230, 230, 0.45);
+  background-position: center;
+  z-index: 2;
+  top: 30%;
+  border-radius: 15px;
+  -webkit-filter: blur(20px);
+
+}
 
 .vectorOverlay {
-  position: inherit;
+  position: absolute;
   background: url("../img/slogan.svg") no-repeat center center;
-  width: 80%;
-  height: 100%;
   background-size: contain;
+  background-position: center;
+  width: 70%;
+  height: 100%;
   overflow: hidden;
   text-align: center;
   display: inline-flex;
   z-index: 3;
+  right: 15%
 }
 #navmutex {}
 .navbar-nav {
