@@ -17,7 +17,9 @@ keystone.init({
   'session': true,
   'auth': true,
   'user model': 'User',
-  'cookie secret': 'wowieamightyfinesecret'
+  'cookie secret': 'wowieamightyfinesecret',
+
+  'port': 8080
 
 });
 
