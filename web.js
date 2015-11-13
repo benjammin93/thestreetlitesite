@@ -2,21 +2,22 @@ var keystone = require('keystone');
 keystone.init({
 
   'name': 'The StreetLite Company',
+  'brand': 'The StreetLite Company',
 
   'favicon': 'public/favicon.ico',
   'less': 'public',
   'static': ['public'],
 
-  'views': 'templates/views',
-  'view engine': 'jade',
+  /*'views': 'templates/views',
+  'view engine': 'jade',*/
 
   'auto update': true,
-  'mongo': 'mongodb://localhost/my-project',
+  'mongo': 'mongodb://localhost:27017',
 
   'session': true,
   'auth': true,
   'user model': 'User',
-  'cookie secret': '(your secret here)'
+  'cookie secret': 'wowieamightyfinesecret'
 
 });
 
